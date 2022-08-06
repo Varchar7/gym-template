@@ -905,7 +905,7 @@ h5,
 }
 
 .site-section {
-  padding: 1em 0;
+  padding-top: 3em;
 }
 @media (max-width: 991.98px) {
   .site-section {
