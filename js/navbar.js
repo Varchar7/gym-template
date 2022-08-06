@@ -1,18 +1,13 @@
-let navbar = document.getElementById("nav-manage");
-let navbarSupportedContent = document.getElementById("navbarSupportedContent");
-
-navbar.addEventListener("click", (e) => {
-  let visible = navbarSupportedContent.classList.contains("show");
-  if (visible) {
-    navbarSupportedContent.classList.remove("show");
+function manageNavbar() {
+  if (document.body.classList.length == 0) {
+    openNavbar();
   } else {
-    navbarSupportedContent.classList.add("show");
+    closeNavbar();
   }
-});
-
-function closeNavbar() {
-  navbar.classList.add("collapsed");
 }
 function openNavbar() {
-  navbar.className;
+  document.body.classList.add("offcanvas-menu");
+}
+function closeNavbar() {
+  document.body.classList.remove("offcanvas-menu");
 }

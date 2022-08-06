@@ -1166,6 +1166,8 @@ h5,
 .service {
   padding: 4rem;
   background: #48d494;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 @media (max-width: 991.98px) {
   .service {
