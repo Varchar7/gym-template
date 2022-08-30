@@ -18,6 +18,11 @@
 
   <body class="">
     <!-- offcanvas-menu -->
+    <div id="message" class="alert-fixed my-4">
+      <div id="inner-message" class="alert alert-info">
+          <p id="alert-message"></p>
+      </div>
+  </div>
     <div class="site-wrap">
       <div class="site-mobile-menu site-navbar-target">
         <div class="site-mobile-menu-header">
@@ -930,20 +935,24 @@
                 consequuntur sunt nisi.
               </p>
 
-              <form method="post">
+              <form method="post" name="contact">
                 <div class="form-group row">
                   <div class="col-md-6 mb-3 mb-lg-0">
                     <input
+                    name="firstName"
                       type="text"
                       class="form-control"
                       placeholder="First name"
+                      
                     />
                   </div>
                   <div class="col-md-6">
                     <input
+                    name="lastName"
                       type="text"
                       class="form-control"
                       placeholder="Last name"
+                      
                     />
                   </div>
                 </div>
@@ -951,9 +960,11 @@
                 <div class="form-group row">
                   <div class="col-md-12">
                     <input
+                    name="subject"
                       type="text"
                       class="form-control"
                       placeholder="Subject"
+                      
                     />
                   </div>
                 </div>
@@ -961,15 +972,18 @@
                 <div class="form-group row">
                   <div class="col-md-12">
                     <input
+                    name="email"
                       type="email"
                       class="form-control"
                       placeholder="Email"
+                      
                     />
                   </div>
                 </div>
                 <div class="form-group row">
                   <div class="col-md-12">
                     <textarea
+                      name="message"
                       class="form-control"
                       id=""
                       cols="30"
@@ -981,11 +995,13 @@
 
                 <div class="form-group row">
                   <div class="col-md-6">
-                    <input
-                      type="submit"
+                    <button
+                      type="button"
                       class="btn btn-primary py-3 px-5 btn-block"
-                      value="Send Message"
-                    />
+                      onclick="submitForm()"
+                    >
+                    Send Message
+                    </button>
                   </div>
                 </div>
               </form>
@@ -1048,8 +1064,6 @@
                   <script>
                     document.write(new Date().getFullYear());
                   </script>
-                  All rights reserved | This template is made with
-                  <i class="icon-heart" aria-hidden="true"></i> by Us
                 </p>
               </div>
             </div>
@@ -1061,6 +1075,7 @@
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
   <script src="js/navbar.js"></script>
-<!-- Check for works -->
+  <script src="js/script.js"></script>
 </html>

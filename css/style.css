@@ -1314,3 +1314,18 @@ h5,
   padding-right: 35px;
   padding-left: 35px;
 }
+#message {
+  display: none;
+  width: 45%;
+}
+#inner-message {
+  margin: 0 auto;
+}
+.alert-fixed {
+  position: fixed;
+  top: 0px;
+  right: 25px;
+  width: 100%;
+  z-index: 9999;
+  border-radius: 0px;
+}
